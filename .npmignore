@@ -1,0 +1,25 @@
+# Build outputs
+android/build
+android/.gradle
+android/.cxx
+android/gradle.properties
+
+# Tests
+**/__tests__
+**/__fixtures__
+**/__mocks__
+
+# Development
+.git
+.gitignore
+node_modules
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

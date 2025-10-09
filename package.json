@@ -1,0 +1,57 @@
+{
+  "name": "@4j17h/react-native-phone-number-autofill",
+  "version": "0.1.0",
+  "description": "Android-only phone number autofill using deprecated Google Credentials API. Shows Google account phone numbers AND SIM numbers. Even though these APIs are deprecated, they still work in play-services-auth:20.7.0 and provide better UX than the new Phone Number Hint API which only shows SIM-based numbers (not Google account numbers).",
+  "main": "src/index.tsx",
+  "files": [
+    "src",
+    "android",
+    "!android/build",
+    "!android/.gradle",
+    "!android/gradle.properties",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "react-native",
+    "android",
+    "phone-number",
+    "autofill",
+    "google-credentials-api",
+    "phone-picker",
+    "phone-hint",
+    "credentials-api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4j17h/react-native-phone-number-autofill.git"
+  },
+  "author": "4j17h",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/4j17h/react-native-phone-number-autofill/issues"
+  },
+  "homepage": "https://github.com/4j17h/react-native-phone-number-autofill#readme",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "codegenConfig": {
+    "name": "PhoneNumberAutofillSpec",
+    "type": "modules",
+    "jsSrcsDir": "src"
+  },
+  "create-react-native-library": {
+    "languages": "kotlin-objc",
+    "type": "turbo-module",
+    "version": "0.54.5"
+  }
+}
