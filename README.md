@@ -1,5 +1,11 @@
 # @4j17h/react-native-phone-number-autofill
 
+[![npm version](https://badge.fury.io/js/@4j17h%2Freact-native-phone-number-autofill.svg)](https://badge.fury.io/js/@4j17h%2Freact-native-phone-number-autofill)
+[![npm downloads](https://img.shields.io/npm/dm/@4j17h/react-native-phone-number-autofill.svg)](https://www.npmjs.com/package/@4j17h/react-native-phone-number-autofill)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Platform](https://img.shields.io/badge/platform-android-green.svg)](https://www.android.com/)
+[![React Native](https://img.shields.io/badge/React%20Native-0.60+-blue.svg)](https://reactnative.dev/)
+
 Android-only phone number autofill using Google Credentials API. Shows Google account phone numbers AND SIM numbers for better UX.
 
 ## Why This Library?
