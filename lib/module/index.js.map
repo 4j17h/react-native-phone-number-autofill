@@ -1,0 +1,1 @@
+{"version":3,"names":["NativePhoneNumberAutofill","requestPhoneNumber","PhoneNumberAutofill"],"sourceRoot":"../../src","sources":["index.tsx"],"mappings":";;AAAA,OAAOA,yBAAyB,MAAM,gCAA6B;AAEnE,OAAO,SAASC,kBAAkBA,CAAA,EAAoB;EACpD,OAAOD,yBAAyB,CAACC,kBAAkB,CAAC,CAAC;AACvD;AAEA,MAAMC,mBAAmB,GAAG;EAC1BD;AACF,CAAC;AAED,eAAeC,mBAAmB","ignoreList":[]}

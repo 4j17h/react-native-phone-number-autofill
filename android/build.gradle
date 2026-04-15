@@ -1,6 +1,8 @@
 buildscript {
-  ext.getExtOrDefault = {name ->
-    return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties['PhoneNumberAutofill_' + name]
+  ext.getExtOrDefault = { name ->
+    return rootProject.ext.has(name)
+      ? rootProject.ext.get(name)
+      : project.properties["PhoneNumberAutofill_" + name]
   }
 
   repositories {
@@ -10,19 +12,19 @@ buildscript {
 
   dependencies {
     classpath "com.android.tools.build:gradle:8.7.2"
-    // noinspection DifferentKotlinGradleVersion
+    // Kotlin version inherited from root project or gradle.properties
     classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${getExtOrDefault('kotlinVersion')}"
   }
 }
 
-
 apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
-
 apply plugin: "com.facebook.react"
 
 def getExtOrIntegerDefault(name) {
-  return rootProject.ext.has(name) ? rootProject.ext.get(name) : (project.properties["PhoneNumberAutofill_" + name]).toInteger()
+  return rootProject.ext.has(name)
+    ? rootProject.ext.get(name)
+    : project.properties["PhoneNumberAutofill_" + name].toInteger()
 }
 
 android {
@@ -45,13 +47,17 @@ android {
     }
   }
 
-  lintOptions {
+  lint {
     disable "GradleCompatible"
   }
 
   compileOptions {
-    sourceCompatibility JavaVersion.VERSION_1_8
-    targetCompatibility JavaVersion.VERSION_1_8
+    sourceCompatibility JavaVersion.VERSION_17
+    targetCompatibility JavaVersion.VERSION_17
+  }
+
+  kotlinOptions {
+    jvmTarget = "17"
   }
 
   sourceSets {
@@ -65,8 +71,8 @@ android {
 }
 
 repositories {
-  mavenCentral()
   google()
+  mavenCentral()
 }
 
 def kotlin_version = getExtOrDefault("kotlinVersion")
@@ -74,5 +80,5 @@ def kotlin_version = getExtOrDefault("kotlinVersion")
 dependencies {
   implementation "com.facebook.react:react-android"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-  implementation 'com.google.android.gms:play-services-auth:20.7.0'
+  implementation "com.google.android.gms:play-services-auth:20.7.0"
 }
