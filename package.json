@@ -38,7 +38,9 @@
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "test": "jest",
-    "release": "release-it --only-version",
+    "release": "release-it",
+    "release:version": "release-it --only-version",
+    "release:dry-run": "release-it --dry-run --ci",
     "web": "vite",
     "build:web": "vite build"
   },
@@ -80,7 +82,7 @@
     "react-native": "0.85.1",
     "react-native-builder-bob": "0.41.0",
     "react-native-web": "0.21.2",
-    "release-it": "20.0.0",
+    "release-it": "19.2.4",
     "turbo": "2.9.6",
     "typescript": "6.0.2"
   },
