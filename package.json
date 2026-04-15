@@ -1,6 +1,6 @@
 {
   "name": "@4j17h/react-native-phone-number-autofill",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "description": "Android-only phone number autofill using deprecated Google Credentials API. Shows Google account phone numbers AND SIM numbers. Even though these APIs are deprecated, they still work in play-services-auth:20.7.0 and provide better UX than the new Phone Number Hint API which only shows SIM-based numbers (not Google account numbers).",
   "main": "lib/module/index.js",
   "types": "lib/typescript/src/index.d.ts",
